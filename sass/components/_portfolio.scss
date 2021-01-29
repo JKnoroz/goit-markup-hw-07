@@ -1,0 +1,102 @@
+.portfolio h1 {
+  display: none;
+}
+
+.projects .item {
+  width: calc((100% - 60px) / 3);
+}
+
+.projects a {
+  display: block;
+}
+
+.projects .item:not(:nth-child(3n + 3)) {
+  margin-right: 30px;
+}
+
+.projects .item:not(:nth-last-child(-n + 3)) {
+  margin-bottom: 30px;
+}
+
+.projects a:hover,
+.projects a:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.projects a:hover .about,
+.projects a:hover .project-photo::before,
+.projects a:focus .about,
+.projects a:focus .project-photo::before {
+  transform: translateY(-100%);
+}
+
+.projects-description {
+  border: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
+.project-photo {
+  position: relative;
+  overflow: hidden;
+}
+
+.about {
+  position: absolute;
+  bottom: -100%;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  height: 100%;
+
+  transition: transform 250ms $transit;
+}
+
+.project-photo::before {
+  position: absolute;
+  bottom: -100%;
+
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transition: transform 250ms $transit;
+}
+
+.about p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  padding: 62px 24px 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $white-color;
+}
+
+.projects img {
+  display: block;
+  margin-bottom: -1px;
+}
+
+.projects h2 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+  color: $primary-text-color;
+  margin-bottom: 4px;
+  margin-top: 0px;
+}
+
+.project-name {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: $secondary-text-color;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

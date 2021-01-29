@@ -1,0 +1,117 @@
+footer {
+  background-color: #2f303a;
+  padding: 60px 0px;
+}
+
+.bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+footer .logo {
+  color: $white-color;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+address p {
+  font-style: normal;
+  color: $white-color;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bottom-contacts a {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin-top: 9px;
+}
+
+footer-contacts {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.subscribe p,
+.sendmail b {
+  font-family: $main-font-family;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $white-color;
+  margin-top: 0px;
+  margin-bottom: 20px;
+
+  display: block;
+}
+
+.footer-socials {
+  display: inline-flex;
+}
+
+.footer-socials a {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $white-color;
+
+  transition: background-color 250ms $transit;
+}
+
+.footer-socials a:hover,
+.footer-socials a:focus {
+  background-color: $accent-color;
+}
+
+.footer-icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.subscribe li:not(:last-child) {
+  margin-right: 10px;
+}
+
+.subform {
+  display: inline-flex;
+}
+
+.subform input {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+  background-color: rgba(33, 150, 243, 0);
+  padding: 15px;
+  margin-right: 12px;
+  color: $white-color;
+}
+
+.subform button {
+  border-color: transparent;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-send {
+  margin-left: 10px;
+}
+
+.icon-send svg {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
