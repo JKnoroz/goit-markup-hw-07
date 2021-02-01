@@ -1,0 +1,58 @@
+.team-member {
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+  &__name {
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+
+  &__position {
+    color: $secondary-text-color;
+    margin-bottom: 16px;
+    margin-top: 0;
+  }
+}
+
+.card-description {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.team-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.team-socials {
+  display: inline-flex;
+}
+
+.social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: #afb1b8;
+
+  transition: background-color 250ms $transit, color 250ms $transit;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: $accent-color;
+  color: $white-color;
+}
+
+.team-socials li:not(:last-child) {
+  margin-right: 10px;
+}

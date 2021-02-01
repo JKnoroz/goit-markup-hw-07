@@ -1,0 +1,43 @@
+.contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.contacts li + li {
+  margin-left: 50px;
+}
+
+.contacts a {
+  font-size: 16px;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+}
+
+.contacts-icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+.contact {
+  color: $secondary-text-color;
+}
+
+address p {
+  font-style: normal;
+  color: $white-color;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.bottom-contacts a {
+  color: rgba(255, 255, 255, 0.6);
+  display: inline-block;
+  margin-top: 9px;
+}
+
+footer-contacts {
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}

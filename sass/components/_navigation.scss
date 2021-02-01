@@ -7,20 +7,6 @@ header {
   border-bottom: 1px solid #ececec;
 }
 
-.logo {
-  font-family: $secondary-font-family;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: $logoblack-color;
-  margin-right: 93px;
-}
-
-.logo span {
-  color: $accent-color;
-}
-
 header .link {
   font-weight: 500;
   font-size: 14px;
@@ -29,31 +15,6 @@ header .link {
   color: inherit;
   display: block;
   padding: 32px 0;
-}
-
-.contacts {
-  display: flex;
-  margin-left: auto;
-}
-
-.contacts li + li {
-  margin-left: 50px;
-}
-
-.contacts a {
-  font-size: 16px;
-  line-height: 1;
-  display: inline-flex;
-  align-items: center;
-}
-
-.contacts-icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-.contact {
-  color: $secondary-text-color;
 }
 
 .menu .link,

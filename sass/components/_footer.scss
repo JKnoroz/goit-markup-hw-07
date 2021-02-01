@@ -9,31 +9,6 @@ footer {
   justify-content: space-between;
 }
 
-footer .logo {
-  color: $white-color;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-address p {
-  font-style: normal;
-  color: $white-color;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.bottom-contacts a {
-  color: rgba(255, 255, 255, 0.6);
-  display: inline-block;
-  margin-top: 9px;
-}
-
-footer-contacts {
-  font-size: 14px;
-  line-height: 1.7;
-  letter-spacing: 0.03em;
-}
-
 .subscribe p,
 .sendmail b {
   font-family: $main-font-family;
