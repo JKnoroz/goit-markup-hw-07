@@ -87,20 +87,10 @@
   /* Legacy iOS */
 }
 
-:root {
-  --primary-text-color: #212121;
-  --secondary-text-color: #757575;
-  --accent-color: #2196f3;
-  --white-color: #ffffff;
-  --logoblack-color: #000000;
-  --transit: cubic-bezier(0.4, 0, 0.2, 1);
-  --project-card-gap: 30px;
-}
-
 body {
-  font-family: 'Roboto', sans-serif;
-  color: var(--primary-text-color);
-  background-color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  color: #212121;
+  background-color: #ffffff;
 }
 
 section {
@@ -180,17 +170,17 @@ header {
 }
 
 .logo {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
-  color: var(--logoblack-color);
+  color: #000000;
   margin-right: 93px;
 }
 
 .logo span {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 header .link {
@@ -231,24 +221,24 @@ header .link {
 }
 
 .contact {
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 .menu .link,
 .contacts .link {
-  -webkit-transition: color 250ms var(--transit);
-  transition: color 250ms var(--transit);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.current {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .menu .link:hover,
 .menu .link:focus,
 .contacts li :hover,
 .contacts li :focus {
-  color: var(--accent-color);
+  color: #2196f3;
 }
 
 .menu {
@@ -273,7 +263,7 @@ header .link {
   display: block;
   width: 100%;
   height: 4px;
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   border-radius: 2px;
 }
 
@@ -299,7 +289,7 @@ h1 {
   line-height: 1.4;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: #ffffff;
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -309,8 +299,8 @@ h1 {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--white-color);
-  background-color: var(--accent-color);
+  color: #ffffff;
+  background-color: #2196f3;
   border-radius: 4px;
   min-width: 200px;
   height: 50px;
@@ -351,7 +341,7 @@ h1 {
 }
 
 .features p {
-  color: var(--secondary-text-color);
+  color: #757575;
   line-height: 1.71;
   margin-bottom: 0px;
 }
@@ -408,7 +398,7 @@ h1 {
 }
 
 .team .team-member {
-  background-color: var(--white-color);
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -440,7 +430,7 @@ h1 {
 }
 
 .card-description p {
-  color: var(--secondary-text-color);
+  color: #757575;
   margin-bottom: 16px;
   margin-top: 0;
 }
@@ -471,14 +461,14 @@ h1 {
   height: 44px;
   border-radius: 50%;
   color: #afb1b8;
-  -webkit-transition: background-color 250ms var(--transit), color 250ms var(--transit);
-  transition: background-color 250ms var(--transit), color 250ms var(--transit);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover,
 .social-link:focus {
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  background-color: #2196f3;
+  color: #ffffff;
 }
 
 .team-socials li:not(:last-child) {
@@ -501,8 +491,8 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-transition: border-color 250ms var(--transit), color 250ms var(--transit);
-  transition: border-color 250ms var(--transit), color 250ms var(--transit);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients li:not(:last-child) {
@@ -511,8 +501,8 @@ h1 {
 
 .clients a:hover,
 .clients a:focus {
-  border-color: var(--accent-color);
-  color: var(--accent-color);
+  border-color: #2196f3;
+  color: #2196f3;
   cursor: pointer;
 }
 
@@ -537,7 +527,7 @@ h1 {
   line-height: 1.6;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #212121;
   background-color: #f5f4fa;
   border-radius: 4px;
   padding: 4px 20px;
@@ -550,14 +540,14 @@ h1 {
   transition-property: background-color, color, box-shadow, -webkit-box-shadow;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
-  -webkit-transition-timing-function: var(--transit);
-          transition-timing-function: var(--transit);
+  -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+          transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-filter button:focus,
 .projects-filter button:hover {
-  background-color: var(--accent-color);
-  color: var(--white-color);
+  background-color: #2196f3;
+  color: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -567,15 +557,15 @@ h1 {
 }
 
 .projects {
-  margin-left: calc(-1 * var(--project-card-gap));
-  margin-top: calc(-1 * var(--project-card-gap));
+  margin-left: calc((-1) * 30px);
+  margin-top: calc((-1) * 30px);
 }
 
 .projects > .project {
-  -ms-flex-preferred-size: calc(100% / 3-var(--project-card-gap));
-      flex-basis: calc(100% / 3-var(--project-card-gap));
-  margin-left: var(--project-card-gap);
-  margin-top: var(--project-card-gap);
+  -ms-flex-preferred-size: calc(100% / 3-$project-card-gap);
+      flex-basis: calc(100% / 3-$project-card-gap);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .projects a {
@@ -611,10 +601,10 @@ h1 {
   bottom: -100%;
   width: 100%;
   height: 100%;
-  -webkit-transition: -webkit-transform 250ms var(--transit);
-  transition: -webkit-transform 250ms var(--transit);
-  transition: transform 250ms var(--transit);
-  transition: transform 250ms var(--transit), -webkit-transform 250ms var(--transit);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-photo::before {
@@ -624,10 +614,10 @@ h1 {
   width: 100%;
   height: 100%;
   background-color: rgba(33, 150, 243, 0.9);
-  -webkit-transition: -webkit-transform 250ms var(--transit);
-  transition: -webkit-transform 250ms var(--transit);
-  transition: transform 250ms var(--transit);
-  transition: transform 250ms var(--transit), -webkit-transform 250ms var(--transit);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .about p {
@@ -639,7 +629,7 @@ h1 {
   padding: 62px 24px 0;
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .projects img {
@@ -653,7 +643,7 @@ h1 {
   line-height: 2;
   letter-spacing: 0.06em;
   text-align: left;
-  color: var(--primary-text-color);
+  color: #212121;
   margin-bottom: 4px;
   margin-top: 0px;
 }
@@ -662,7 +652,7 @@ h1 {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--secondary-text-color);
+  color: #757575;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -686,14 +676,14 @@ footer {
 }
 
 footer .logo {
-  color: var(--white-color);
+  color: #ffffff;
   display: inline-block;
   margin-bottom: 20px;
 }
 
 address p {
   font-style: normal;
-  color: var(--white-color);
+  color: #ffffff;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -720,7 +710,7 @@ address p {
   line-height: 1, 14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  color: var(--white-color);
+  color: #ffffff;
   margin-top: 0px;
   margin-bottom: 20px;
   display: block;
@@ -746,14 +736,14 @@ address p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: var(--white-color);
-  -webkit-transition: background-color 250ms var(--transit);
-  transition: background-color 250ms var(--transit);
+  color: #ffffff;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-socials a:hover,
 .footer-socials a:focus {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
 }
 
 .footer-icon {
@@ -782,7 +772,7 @@ address p {
   background-color: rgba(33, 150, 243, 0);
   padding: 15px;
   margin-right: 12px;
-  color: var(--white-color);
+  color: #ffffff;
 }
 
 .subform button {
@@ -816,8 +806,8 @@ address p {
   background-color: rgba(0, 0, 0, 0.2);
   width: 100%;
   height: 100%;
-  -webkit-transition: opacity 250ms var(--transit);
-  transition: opacity 250ms var(--transit);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -833,17 +823,17 @@ address p {
           transform: translate(-50%, -50%) scale(1);
   min-width: 528px;
   min-height: 581px;
-  background-color: var(--white-color);
+  background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 40px;
   font-family: Roboto;
   font-style: normal;
-  -webkit-transition: -webkit-transform 250ms var(--transit);
-  transition: -webkit-transform 250ms var(--transit);
-  transition: transform 250ms var(--transit);
-  transition: transform 250ms var(--transit), -webkit-transform 250ms var(--transit);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden.modal {
@@ -860,13 +850,13 @@ address p {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 30px;
   height: 30px;
-  -webkit-transition: fill 250ms var(--transit);
-  transition: fill 250ms var(--transit);
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-button:hover,
 .modal-button:focus {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .mform label {
@@ -874,7 +864,7 @@ address p {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-  color: var(--secondary-text-color);
+  color: #757575;
 }
 
 .modal p {
@@ -883,7 +873,7 @@ address p {
   line-height: 1.15;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--primary-text-color);
+  color: #212121;
   margin-bottom: 12px;
   margin-top: 0px;
 }
@@ -945,8 +935,8 @@ address p {
 
 .mform-field input {
   padding-left: 42px;
-  -webkit-transition: border-color 250ms var(--transit), fill 250ms var(--transit);
-  transition: border-color 250ms var(--transit), fill 250ms var(--transit);
+  -webkit-transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mform-field label {
@@ -970,14 +960,14 @@ address p {
 
 .mform-field input:hover ~ .mform-icon,
 .mform-field input:focus ~ .mform-icon {
-  fill: var(--accent-color);
+  fill: #2196f3;
 }
 
 .mform-field input:hover,
 .mform-field textarea:hover,
 .mform-field input:focus,
 .mform-field textarea:focus {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
   outline: none;
 }
 
@@ -989,7 +979,7 @@ address p {
 }
 
 .policy-treaty {
-  color: var(--accent-color);
+  color: #2196f3;
   text-decoration: underline;
   text-decoration-skip-ink: none;
   margin-left: 0, 03em;
@@ -1031,8 +1021,8 @@ address p {
   left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  -webkit-transition: background-color 250ms var(--transit), border-color 250ms var(--transit);
-  transition: background-color 250ms var(--transit), border-color 250ms var(--transit);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .policy-text {
@@ -1041,15 +1031,15 @@ address p {
 }
 
 .checkbox:checked + .policy-text::before {
-  background-color: var(--accent-color);
+  background-color: #2196f3;
   background-image: url(../images/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .checkbox:focus + .policy-text::before {
-  border-color: var(--accent-color);
+  border-color: #2196f3;
 }
 
 .submit {
@@ -1062,7 +1052,7 @@ address p {
   padding: 8px;
   min-width: 200px;
   background-color: #188ce8;
-  color: var(--white-color);
+  color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border: 2px solid transparent;
